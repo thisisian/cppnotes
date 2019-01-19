@@ -263,9 +263,9 @@ code gets generated at compile time for each type
 
 `using value_type = T;` this is a type alias, standard library types can be queries for their `value_type`
 
-we can write a "deduction guide" when the compiler is unable to figure out what you want from the default constructor
+We can write a _deduction guide_ when the compiler is unable to figure out what you want from the default constructor
 
-###Function objects or "functors":
+###Function objects or _functors_:
     - Implement `()` operator
     - Can behave vaguely like currying
     - Can carry data along with algorithm
@@ -299,7 +299,7 @@ Concepts restrict generic functions by adding requirements:
 `template<Sequence Seq, Number Num>`
 This will only work on `Seq`s which fulfill `Sequence` concept
 
-Can have "requirement clause":
+Can have _requirement clause_:
 ```
 template <Sequence Seq, Number Num>
     requires Arithmetic<Value_type<Seq>, Num>
